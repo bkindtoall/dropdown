@@ -5,7 +5,8 @@
   </head>
   <body>
     <h1>Calculator</h1>
-    <script src="js/script2.js"></script>
+    <script src="js/jquery-3-3-1.js"></script>
+    <script src="js/scripts.js"></script>
 
       <form name="bmiForm">
         Your Weight(kg): <input type="text" name="weight" size="10"><br />
@@ -21,7 +22,46 @@
         <p><input id="c" onkeyup="convert('C')"> degrees Celsius</p>
         <p><input id="f" onkeyup="convert('F')"> degrees Fahrenheit</p>
         <p>Note that the <b>Math.round()</b> method is used, so that the result will be returned as an integer.</p>
-
+<!-- following is dropdown -->
+    <select class="form-control" id="beverage">
+      <option>Coffee</option>
+      <option>Tea</option>
+      <option>Kombucha</option>
+      <option>Water</option>
+    </select>
+    <p></p>
+    <p></p>
+<!-- following are radio buttons -->
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="chocolate" checked>
+        Chocolate
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="vanilla">
+        Vanilla
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="flavor" value="cookiesandcream">
+        Cookies & Cream
+      </label>
+    </div>
+    <p></p>
+    <p></p>
+    <div class="form-group">
+      <label for="born">Date of birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
+    <p></p>
+    <p></p>
+    <div class="form-group">
+      <label for="color">What is your favorite color?</label>
+      <input id="color" class="form-control" type="color">
+    </div>
     <div id="response"></div>
   </body>
 </html>
